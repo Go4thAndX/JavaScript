@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/addons/p5.dom.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <p>
+      <header>
+        <h1>Rectangle</h1>
+      </header>
+    </p>
+    <canvas id="mijnCanvas" width="400" height="300"></canvas>
+    <script>
+      // Haal een referentie naar het canvas-element op
+      var canvas = document.getElementById("mijnCanvas");
+      
+      // Haal de 2D rendering context op
+      var context = canvas.getContext("2d");
+
+      // Definieer de eigenschappen van de rechthoek
+      var x = 50; // x-coördinaat van de linkerbovenhoek
+      var y = 50; // y-coördinaat van de linkerbovenhoek
+      var breedte = 200;
+      var hoogte = 100;
+
+      // Teken de rechthoek
+      context.fillStyle = "blue"; // Kleur van de rechthoek
+      context.fillRect(x, y, breedte, hoogte);
+  </script>
+  </body>
+</html>

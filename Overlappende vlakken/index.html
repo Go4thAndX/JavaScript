@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <script src="script.js"></script>
+    <style>
+      /* CSS voor het overlappende vlak */
+        .highlight {
+          position: fixed; /* Zet de positie van het vlak op 'vast' */
+          top: 0; /* Plaats het vlak bovenaan de pagina */
+          left: 0; /* Plaats het vlak helemaal links */
+          width: 5cm; /* Standaardbreedte van het overlappende vlak */
+          height: 100%; /* Hoogte van het overlappende vlak (100% van de pagina) */
+          background-color: lightblue; /* Achtergrondkleur van het overlappende vlak */
+          transition: width 0.3s; /* Overgangseffect voor de breedte */
+    }
+    </style>
+
+    <style>
+        header {
+            background-color: lightblue;
+            width: 100%;
+        }
+        
+        header h1 {
+            position: relative;
+            left: 10cm;
+            padding: 20px;
+        }
+    </style>
+    <style>
+        .content {
+            background-color: lightblue;
+            width: 100%;
+        }
+        .content p {
+            position: relative;
+            left: 10cm;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non nulla vel mi elementum mattis.<br>
+        Pellentesque eget justo id leo tincidunt tincidunt. In sit amet metus eigen nunc lacinia vestibulum.</p>
+    </div>
+    <div class="highlight"></div>
+</body>
+
+</html>

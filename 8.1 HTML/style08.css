@@ -1,0 +1,13 @@
+.test {
+  width: 100px; /* Breedte van het vierkant */
+  height: 100px; /* Hoogte van het vierkant */
+  background-color: red; /* Kleur van het vierkant */
+}
+
+/* Stijlen van de header */
+header {
+  /* Hier vervang je #--- door de kleurcode die je wilt gebruiken */
+ background-color: #000000;
+ color: #fff;
+ text-align: center;
+}
